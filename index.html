@@ -94,6 +94,8 @@
       text-align: left;
       position: relative;
       z-index: 10;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
     }
     .kiosk-btn:active {
       transform: scale(0.98);
@@ -261,7 +263,7 @@
 
     <!-- 3. Sekundär-Button: Sonstiges Anliegen -->
     <div class="action-row">
-      <a href="https://forms.gle/5HnLRcEhbmvaVj6W6" class="kiosk-btn secondary-btn">
+      <a href="https://forms.gle/5HnLRcEhbmvaVj6W6" onclick="window.location.href=this.href;" ontouchstart="window.location.href=this.href;" class="kiosk-btn secondary-btn">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
         <div class="btn-text">
           <span class="de">Sonstiges Anliegen</span>

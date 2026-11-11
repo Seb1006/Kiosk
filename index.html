@@ -227,62 +227,75 @@
       📱 Lieber auf dem eigenen Smartphone ausfüllen? Scannen Sie den Code:
     </div>
     
-    <!-- 1. Button: Ersttermin -->
-  <div class="action-row">
-    <a href="https://termine.opticaviva.de/a/meuKPntQdCmXZ_m5QbOW5UV-inl2mzcB" class="kiosk-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" y1="8" x2="19" y2="14"></line><line x1="22" y1="11" x2="16" y2="11"></line></svg>
-      <div class="btn-text" style="pointer-events: none;">
-        <span class="de">Neuer Patient (Ersttermin)</span>
-        <span class="en">New patient (First appointment)</span>
+    <!-- 1. Haupt-Button: Optica VIVA -->
+    <div class="action-row">
+      <a href="https://termine.opticaviva.de/a/meuKPntQdCmXZ_m5QbOW5UV-inl2mzcB" class="kiosk-btn">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        <div class="btn-text">
+          <span class="de">Ersttermin buchen</span>
+          <span class="en">First appointment</span>
+        </div>
+      </a>
+      <div class="qr-box">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://termine.opticaviva.de/a/meuKPntQdCmXZ_m5QbOW5UV-inl2mzcB" alt="QR Code Ersttermin">
       </div>
-    </a>
-    <div class="qr-box">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://termine.opticaviva.de/a/meuKPntQdCmXZ_m5QbOW5UV-inl2mzcB" alt="QR Ersttermin" style="pointer-events: none;">
     </div>
+
+    <!-- 2. Haupt-Button: DOC-IQ -->
+    <div class="action-row">
+      <a href="https://app.doc-iq.de/ag-therapie-kostheim-gmbh/terminwunsch" class="kiosk-btn">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        <div class="btn-text">
+          <span class="de">Folgetermin anfragen</span>
+          <span class="en">Existing appointment</span>
+        </div>
+      </a>
+      <div class="qr-box">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://app.doc-iq.de/ag-therapie-kostheim-gmbh/terminwunsch" alt="QR Code Folgetermin">
+      </div>
+    </div>
+
+    <!-- 3. Sekundär-Button: Sonstiges Anliegen -->
+    <div class="action-row">
+      <a href="https://forms.gle/5HnLRcEhbmvaVj6W6" class="kiosk-btn secondary-btn">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        <div class="btn-text">
+          <span class="de">Sonstiges Anliegen</span>
+          <span class="en">Other requests</span>
+        </div>
+      </a>
+      <div class="qr-box">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://forms.gle/PntVDNFSVp4ctYy29" alt="QR Code Sonstiges">
+      </div>
+    </div>
+
+    <!-- Footer mit Google Bewertung & Visitenkarte -->
+    <div class="footer-container">
+      
+      <!-- Google Review -->
+      <div class="footer-box">
+        <div class="footer-text">
+          <strong>Zufrieden mit uns? 🌟</strong>
+          <p>Wir freuen uns über Ihre<br>Google Bewertung.</p>
+        </div>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://search.google.com/local/writereview?placeid=ChIJyf1XKymXvUcRbtbwhaGUUHg&source=g.page.m.ia._&laa=nmx-review-solicitation-ia2" alt="Google QR" class="small-qr">
+      </div>
+
+      <!-- Visitenkarte -->
+      <div class="footer-box center">
+        <div class="footer-text" style="text-align: center;">
+          <strong>Visitenkarte</strong>
+          <p>Nehmen Sie sich gerne<br>eine Karte vom Ständer mit.</p>
+        </div>
+        <svg class="down-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="5" x2="12" y2="19"></line>
+          <polyline points="19 12 12 19 5 12"></polyline>
+        </svg>
+      </div>
+
+    </div>
+
   </div>
 
-  <!-- 2. Button: Folgetermin -->
-  <div class="action-row">
-    <a href="https://app.doc-iq.de/ag-therapie-kostheim-gmbh/terminwunsch" class="kiosk-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-      <div class="btn-text" style="pointer-events: none;">
-        <span class="de">Bestehender Patient (Folgetermin)</span>
-        <span class="en">Existing patient (Follow-up)</span>
-      </div>
-    </a>
-    <div class="qr-box">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://app.doc-iq.de/ag-therapie-kostheim-gmbh/terminwunsch" alt="QR Folgetermin" style="pointer-events: none;">
-    </div>
-  </div>
-
-  <!-- 3. Button: Sonstiges Anliegen -->
-  <div class="action-row">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLScXxz0Yu77wZgbCQmNJj0z3YoHMj_s-BxYB583Hasybz4XP5A/viewform?usp=header" class="kiosk-btn secondary-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;">
-        <circle cx="12" cy="12" r="10"></circle>
-        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
-        <line x1="12" y1="17" x2="12.01" y2="17"></line>
-      </svg>
-      <div class="btn-text" style="pointer-events: none;">
-        <span class="de">Sonstiges Anliegen</span>
-        <span class="en">Other requests</span>
-      </div>
-    </a>
-    <div class="qr-box">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://docs.google.com/forms/d/e/1FAIpQLScXxz0Yu77wZgbCQmNJj0z3YoHMj_s-BxYB583Hasybz4XP5A/viewform?usp=header" alt="QR Code Sonstiges" style="pointer-events: none;">
-    </div>
-  </div>
-
-  <!-- 4. Button: Google Bewertung -->
-  <div class="action-row">
-    <a href="https://search.google.com/local/writereview?placeid=ChIJyf1XKymXvUcRbtbwhaGUUHg&source=g.page.m.ia._&laa=nmx-review-solicitation-ia2" class="kiosk-btn secondary-btn">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="pointer-events: none;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-      <div class="btn-text" style="pointer-events: none;">
-        <span class="de">Google Bewertung abgeben</span>
-        <span class="en">Leave a Google review</span>
-      </div>
-    </a>
-    <div class="qr-box">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://search.google.com/local/writereview?placeid=ChIJyf1XKymXvUcRbtbwhaGUUHg" alt="QR Code Bewertung" style="pointer-events: none;">
-    </div>
-  </div>
+</body>
+</html>
